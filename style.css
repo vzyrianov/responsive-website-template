@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+
+body {
+    background-color: #191919;
+    margin: 0 !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    text-align: center;
+}
+
+article {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #555;
+    height: 50px;
+    width: 400px;
+    display: block;
+    margin-top: 0;
+    border-radius: 0px 0px 15px 0px;
+}
+
+footer {
+    padding: 5px;
+    background-color: #555;
+    color: white;
+    text-align: left;
+    font-family: "Ubuntu";
+}
+
+h1 {
+    margin-left: 50px;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+    #menu.stick {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+#menuitem {
+    float: left;
+}
+
+    #menuitem a {
+        font-family: "Ubuntu";
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        #menuitem a:hover {
+            background-color: #555;
+            color: #111;
+        }
+
+@media screen and (max-width: 560px) {
+    article {
+        border-radius: 0px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    header {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    #menuitem {
+        float: initial;
+    }
+
+    .nav-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+        .nav-btn::before {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            content: "";
+            background: url("menu-ico.png") no-repeat center center;
+            background-size: 100%;
+        }
+}
